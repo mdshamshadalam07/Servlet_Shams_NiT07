@@ -1,0 +1,11 @@
+<web-app>
+     <servlet>
+           <servlet-name>DateServlet</servlet-name>
+           <servlet-class>com.nt.servlet.DateServlet</servlet-class>
+     </servlet>
+             <servlet-mapping>
+                      <servlet-name>DateServlet</servlet-name>
+                      <url-pattern>/first</url-pattern>
+                  
+             </servlet-mapping>
+</web-app>
