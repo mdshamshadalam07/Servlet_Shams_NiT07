@@ -1,0 +1,48 @@
+<form action="registrationurl" method="Post">
+		<h1 style="color: red" align="center"> Corona Patient Registration</h1>
+		<table row="6" col="2">
+		    <tr>
+				<th> Patient Name :</th>
+				<td><input type="text" name="patName"
+					placeholder="Enter Person Name"></td>
+			</tr>
+			
+			 <tr>
+				<th> Patient Address :</th>
+				<td><input type="text" name="patAddrs"
+					placeholder="Enter Person Address"></td>
+			</tr>
+			
+			
+			 <tr>
+				<th> Patient Age :</th>
+				<td><input type="text" name="patAge"
+					placeholder="Enter Person Age"></td>
+			</tr>
+			
+			 <tr>
+				<th> Patient Gender :</th>
+				<td><input type="radio" name="gender" value="M"
+					checked="checked" />Male&nbsp;&nbsp; <input type="radio"
+					name="gender" value="F" />Female &nbsp;&nbsp;
+				</td>
+			</tr>
+			
+			<tr>
+				<th>Patient Corona Stage :</th>
+				<td><select name="stage">
+						<option value="">---select---</option>
+						<option value="stage1">STAGE1</option>
+						<option value="stage2">STAGE2</option>
+						<option value="stage3">STAGE3</option>
+						<option value="stage4">STAGE4</option>
+				</select></td>
+			</tr>
+					
+				<tr>
+				   <td colspan="2"><input type="submit" value="Register Patient" /><input
+						type="reset"   value="Cancel" />
+					</td>
+				</tr>
+			</table>
+	</form>
