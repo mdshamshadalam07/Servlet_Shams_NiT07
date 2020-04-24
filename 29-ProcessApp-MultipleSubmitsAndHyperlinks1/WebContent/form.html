@@ -1,0 +1,32 @@
+
+
+
+<h1 style="color:red;text-align:center">Html to servlet communication Using multiple hyperlinks and Submit Buttons</h1>
+
+<form name="frm" action="processurl"  method="POST">
+     First Value :: <input type="text" name="first"><br>
+     Second Value :: <input type="text" name="second"><br>
+     <input type="hidden" name="source"/>
+     <input type="button"  value="sum"  onclick="send(this.value)">
+     <input type="button"  value="difference" onclick="send(this.value)">
+     <input type="button"  value="product" onclick="send(this.value)">
+     <input type="button"  value="divide" onclick="send(this.value)"> <br>
+      <a href="processurl?source=link">Sys Props</a>
+</form>
+  <script language="JavaScript">
+     function send(cap){
+    	 //keep value in the hidden box based on the Button that is clicked
+    	 if(cap=="sum")
+    		  frm.source.value="add";
+    	 else if(cap=="difference")
+    		 frm.source.value="sub";
+    	 else if(cap=="product")
+    		 frm.source.value="mul";
+    	 else if(cap=="divide")
+    		 frm.source.value="div";
+    	 //submit the request
+    	  frm.submit();
+    	 
+     }
+  
+  </script>
