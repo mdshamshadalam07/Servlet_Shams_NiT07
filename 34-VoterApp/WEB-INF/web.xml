@@ -1,0 +1,14 @@
+<web-app>
+  <servlet>
+         <servlet-name>voter</servlet-name>
+         <servlet-class>com.nit.servlet.VoterServlet</servlet-class>
+  </servlet>
+
+       <servlet-mapping>
+         <servlet-name>voter</servlet-name>
+         <url-pattern>/voterurl</url-pattern>
+         </servlet-mapping>
+</web-app>
+  
+
+    
