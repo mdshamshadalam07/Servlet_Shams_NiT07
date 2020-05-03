@@ -1,0 +1,26 @@
+ SQL> desc cookie_person_info;
+ Name                                                  Null?    Type
+ ----------------------------------------------------- -------- ------------------------------------
+ PID                                                   NOT NULL NUMBER(10)
+ PNAME                                                          VARCHAR2(20)
+ FNAME                                                          VARCHAR2(20)
+ GENDER                                                         VARCHAR2(10)
+ INCOME                                                         NUMBER(10,2)
+ TAX                                                            NUMBER(10,2)
+
+ SQL> create table Session_person_info as select * from cookie_person_info;
+
+ SQL> alter table Session_person_info add primary key(pid);
+ 
+ SQL> create sequence pid_ses_seq start with 1 increment by 1;
+ 
+ SQL> desc Session_person_info;
+ Name                                                  Null?    Type
+ ----------------------------------------------------- -------- ------------------------------------
+ PID                                                   NOT NULL NUMBER(10)
+ PNAME                                                          VARCHAR2(20)
+ FNAME                                                          VARCHAR2(20)
+ GENDER                                                         VARCHAR2(10)
+ INCOME                                                         NUMBER(10,2)
+ TAX                                                            NUMBER(10,2)
+ 
