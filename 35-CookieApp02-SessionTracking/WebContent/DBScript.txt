@@ -1,0 +1,5 @@
+
+
+
+SQL> create table cookie_person_info(pid number (10) primary key, pname varchar2(20), fname varchar2(20), gender varchar2(10), income number(10,2), tax number(10,2));
+SQL>create sequence cookie_pid start with 1 increment by 1;
