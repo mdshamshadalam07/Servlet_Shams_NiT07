@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>37-DifferentTypeOfServletURLPatternsMIMEAPP</display-name>
+   <servlet>
+    <servlet-name>Html</servlet-name>
+    <servlet-class>com.nt.servlet.HtmlServlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Html</servlet-name>
+    <url-pattern>/test1</url-pattern>
+     <url-pattern>/test2</url-pattern>
+  </servlet-mapping>
+  
+ <!-- <servlet>
+    <servlet-name>Plain</servlet-name>
+    <servlet-class>com.nt.servlet.PlainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Plain</servlet-name>
+    <url-pattern>/plainurl</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>Excel</servlet-name>
+    <servlet-class>com.nt.servlet.ExcelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Excel</servlet-name>
+   <url-pattern>/test1/test2/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Word</servlet-name>
+    <servlet-class>com.nt.servlet.WordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Word</servlet-name>
+    <url-pattern>/x/y/*</url-pattern>
+  </servlet-mapping>
+ --> 
+    
+  <servlet>
+    <servlet-name>Xml</servlet-name>
+    <servlet-class>com.nt.servlet.XmlServlet</servlet-class>  
+    </servlet>
+  <servlet-mapping>
+    <servlet-name>Xml</servlet-name>
+    <url-pattern>/xmlurl</url-pattern>
+  </servlet-mapping>
+</web-app>
